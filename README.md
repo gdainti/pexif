@@ -7,6 +7,11 @@ Useful to organise/clean up big folders with hundreds of photos, especially if f
 
 ## Usage:
 
+* to see basic info about given folder:
+```javascript
+python3 pexif.py ./dir
+```
+
 * to see specific image exif tags:
 ```javascript
 python3 pexif.py ./dir --tags Model Artist Orientation WhiteBalance Copyright
