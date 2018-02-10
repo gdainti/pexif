@@ -174,7 +174,7 @@ def print_groups(years, months, days):
 
 def process_folder(parsed_args):
     """Main cycle, iterates on files of the given folder"""
-    
+
     #args
     directory = parsed_args.directory
     tags = parsed_args.tags
@@ -231,6 +231,8 @@ def process_folder(parsed_args):
         item_title = "%s. \"%s\"" % (item_counter, item)
         if DATE_TIME_ORIGINAL_TAG not in exif_data:
             item_skipped_counter += 1
+            if (group_by):
+                group_item(item, directory, "skipped")
             continue
 
         item_counter += 1
