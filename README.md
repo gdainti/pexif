@@ -27,7 +27,7 @@ python3 pexif.py ./dir --all
 python3 pexif.py ./dir --rename
 ```
 
-* to group image into folders (Y - by year, M - my month, D - by day):
+* to group image into folders (Y - by year, M - by month, D - by day):
 ```javascript
 python3 pexif.py ./dir --group Y
 ```
